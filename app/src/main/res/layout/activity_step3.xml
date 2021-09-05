@@ -19,10 +19,12 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layoutDescription="@xml/step3" >
+        app:layoutDescription="@xml/step3"
+        app:motionDebug="SHOW_PATH" >
 
 
     <ImageView
+            android:id="@+id/backgroundImage"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintTop_toTopOf="parent"
@@ -31,6 +33,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:srcCompat="@drawable/background"
             android:scaleType="centerCrop"
+            android:contentDescription="@null"
     />
 
     <ImageView
@@ -38,7 +41,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/ic_moon"
-            android:tint="?colorOnPrimary"
+            app:tint="?colorOnPrimary"
+            android:contentDescription="@null"
     />
 
     <TextView
