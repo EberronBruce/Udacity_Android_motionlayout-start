@@ -43,6 +43,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:srcCompat="@drawable/background"
                     android:scaleType="centerCrop"
+                android:contentDescription="@null"
             />
 
 
@@ -51,7 +52,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:srcCompat="@drawable/ic_moon"
-                    android:tint="?colorOnPrimary"
+                    app:tint="?colorOnPrimary"
+                android:contentDescription="@null"
             />
 
             <TextView
