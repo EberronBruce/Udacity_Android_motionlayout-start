@@ -28,7 +28,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:layoutDescription="@xml/step8"
-                app:motionDebug="SHOW_PATH" >
+                app:motionDebug="SHOW_PATH"
+                android:minHeight="80dp"
+                app:layout_scrollFlags="scroll|enterAlways|snap|exitUntilCollapsed"
+            >
 
             <ImageView
                     android:id="@+id/background"
@@ -40,6 +43,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:srcCompat="@drawable/background"
                     android:scaleType="centerCrop"
+                    android:contentDescription="@null"
             />
 
 
@@ -48,7 +52,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:srcCompat="@drawable/ic_moon"
-                    android:tint="?colorOnPrimary"
+                    app:tint="?colorOnPrimary"
+                    android:contentDescription="@null"
             />
 
             <TextView
